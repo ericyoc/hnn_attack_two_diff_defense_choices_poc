@@ -76,6 +76,4 @@ Please refer to the code documentation and comments for more details on the impl
 
 This code builds upon the concepts and techniques from various research papers and open-source libraries in the field of adversarial machine learning. We would like to acknowledge their contributions and the valuable insights they provide.
 
-If you have any questions or suggestions, please feel free to open an issue or contact the repository maintainers.
-
-Happy coding and stay safe against adversarial attacks!
+Disclaimer This repository is intended for educational and research purposes.
