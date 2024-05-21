@@ -2,6 +2,9 @@
 
 This repository contains code for a Hybrid Neural Network (HNN) that combines a Quantum Neural Network (QNN) and a Convolutional Neural Network (CNN) to classify handwritten digits from the MNIST or EMNIST datasets. The HNN model is protected against adversarial attacks using either adversarial training or randomization defense techniques.
 
+## Motivating Articles and Related Works
+Sicong Han, Chenhao Lin, Chao Shen, Qian Wang, and Xiaohong Guan. 2023. Interpreting Adversarial Examples in Deep Learning: A Review. ACM Comput. Surv. 55, 14s, Article 328 (December 2023), 38 pages. https://doi.org/10.1145/3594869
+
 ## Features
 
 - Hybrid Neural Network (HNN) architecture combining QNN and CNN
