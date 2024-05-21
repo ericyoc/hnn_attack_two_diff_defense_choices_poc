@@ -4,7 +4,7 @@ This repository contains code for a Hybrid Neural Network (HNN) that combines a 
 
 ## Motivating Articles and Related Works
 
-Sitawarin, C., Golan-Strieb, Z.J. &amp; Wagner, D.. (2022). Demystifying the Adversarial Robustness of Random Transformation Defenses. <i>Proceedings of the 39th International Conference on Machine Learning</i>, in <i>Proceedings of Machine Learning Research</i> 162:20232-20252 Available from https://proceedings.mlr.press/v162/sitawarin22a.html.
+Sitawarin, C., Golan-Strieb, Z.J. &amp; Wagner, D.. (2022). Demystifying the Adversarial Robustness of Random Transformation Defenses. <i>Proceedings of the 39th International Conference on Machine Learning</i>, in <i>Proceedings of Machine Learning Research</i> 162:20232-20252 Available from https://proceedings.mlr.press/v162/sitawarin22a.html
 
 Sicong Han, Chenhao Lin, Chao Shen, Qian Wang, and Xiaohong Guan. 2023. Interpreting Adversarial Examples in Deep Learning: A Review. ACM Comput. Surv. 55, 14s, Article 328 (December 2023), 38 pages. https://doi.org/10.1145/3594869
 
