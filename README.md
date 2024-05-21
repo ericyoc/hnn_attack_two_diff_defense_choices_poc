@@ -12,7 +12,6 @@ This repository contains code for a Hybrid Neural Network (HNN) that combines a 
   - Random cropping
   - Random rotation
   - Combined randomization (resizing, cropping, rotation, color jittering, random erasing, noise injection)
-  - Dynamic randomization (randomly selecting a randomization technique for each batch during training)
 - Evaluation of model performance and adversarial robustness
 - Visualization of misclassified examples and adversarial perturbations
 
