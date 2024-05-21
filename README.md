@@ -8,6 +8,9 @@ Sitawarin, C., Golan-Strieb, Z.J. &amp; Wagner, D.. (2022). Demystifying the Adv
 
 Sicong Han, Chenhao Lin, Chao Shen, Qian Wang, and Xiaohong Guan. 2023. Interpreting Adversarial Examples in Deep Learning: A Review. ACM Comput. Surv. 55, 14s, Article 328 (December 2023), 38 pages. https://doi.org/10.1145/3594869
 
+Olga Taran, Shideh Rezaeifar, Taras Holotyak, Slava Voloshynovskiy; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 11226-11233
+https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adversarial_Attacks_by_Randomized_Diversification_CVPR_2019_paper.html
+
 ## Features
 
 - Hybrid Neural Network (HNN) architecture combining QNN and CNN
