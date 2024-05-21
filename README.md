@@ -12,6 +12,7 @@ This repository contains code for a Hybrid Neural Network (HNN) that combines a 
   - Random cropping
   - Random rotation
   - Combined randomization (resizing, cropping, rotation, color jittering, random erasing, noise injection)
+  - Dynamic randomization (randomly selecting a randomization technique for each batch during training)
 - Evaluation of model performance and adversarial robustness
 - Visualization of misclassified examples and adversarial perturbations
 
@@ -23,15 +24,17 @@ Adversarial training is a defense technique that involves training the model on 
 
 ### Randomization Defense
 
-Randomization defense techniques involve applying random transformations to the input data during training to increase the model's robustness against adversarial attacks. The following randomization methods are implemented:
+Randomization defense techniques involve applying random transformations to the input data during training to increase the model's robustness against adversarial attacks. The key idea behind randomization defense is to introduce random variations in the input data, making it harder for adversarial perturbations to have a consistent effect on the model's predictions.
 
-- Random Resizing: Randomly resizes the input images within a specified scale range.
-- Random Cropping: Randomly crops a smaller region from the input images.
-- Random Rotation: Randomly rotates the input images within a specified angle range.
-- Combined Randomization: Applies a combination of random resizing, cropping, rotation, color jittering, random erasing, and noise injection.
-- Dynamic Randomization: Randomly selects a randomization technique for each batch during training.
+The implemented randomization defense methods work as follows:
 
-Randomization defense techniques help to increase the model's robustness by introducing variations in the input data, making it harder for adversarial perturbations to fool the model.
+- Random Resizing: The input images are randomly resized within a specified scale range. This introduces variations in the spatial dimensions of the images, making the model more resilient to size-related adversarial perturbations.
+- Random Cropping: A random smaller region is cropped from the input images. This helps the model learn to focus on different parts of the image and reduces its sensitivity to specific pixel locations.
+- Random Rotation: The input images are randomly rotated within a specified angle range. This helps the model become invariant to rotational changes and enhances its ability to recognize objects from different orientations.
+- Combined Randomization: Multiple randomization techniques, including resizing, cropping, rotation, color jittering, random erasing, and noise injection, are applied together. This creates a diverse set of input variations, making it challenging for adversarial perturbations to have a consistent impact.
+- Dynamic Randomization: For each training batch, a randomization technique is randomly selected and applied to the input data. This dynamic approach further increases the unpredictability and diversity of the input variations.
+
+By applying these randomization techniques, the model learns to be more robust and generalizable, as it is trained on a wide range of input variations. Adversarial perturbations that are crafted based on a specific input may not have the same effect when random transformations are applied, reducing the effectiveness of adversarial attacks.
 
 ## Importance of Model Protection
 
@@ -41,13 +44,13 @@ By implementing adversarial defense techniques, such as adversarial training and
 
 ## Adversarial Attack Scenarios
 
+In this code, we consider a white-box, targeted, compounded adversarial attack scenario. In a white-box attack, the adversary has full knowledge of the model's architecture, parameters, and training data. Targeted attacks aim to cause the model to misclassify examples into specific target classes. Compounded attacks involve a combination of multiple attack methods to create more sophisticated and challenging adversarial examples.
+
 Adversaries may attempt to attack machine learning models for various reasons, such as:
 
 - Malicious Intent: Adversaries may seek to cause harm or disrupt the model's functionality by inducing incorrect predictions.
 - Fooling the Model: Attackers may aim to deceive the model into making wrong classifications or decisions for their own benefit.
 - Exploiting Vulnerabilities: Adversaries may attempt to identify and exploit vulnerabilities in the model to compromise its security or privacy.
-
-In this code, we consider a white-box, targeted, compounded adversarial attack scenario. In a white-box attack, the adversary has full knowledge of the model's architecture, parameters, and training data. Targeted attacks aim to cause the model to misclassify examples into specific target classes. Compounded attacks involve a combination of multiple attack methods to create more sophisticated and challenging adversarial examples.
 
 By protecting the model against such advanced adversarial attacks, we can enhance its robustness and mitigate the risks associated with adversarial vulnerabilities.
 
