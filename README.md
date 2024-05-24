@@ -13,6 +13,15 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 
 ## Results
 
+### Randomization Defense Mechanism Using Random Resizing Approach for HNN Model with MNIST Dataset
+
+| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy** | **Post Attack Defense Applied Accuracy** |
+|------------------|------------------|------------------|--------------------|
+| FGSM + CW        | 98.0%           | 6.0%           | 100.0%             |
+| FGSM + PGD       | 100.0%           | 14.0%           | 100.0%             |
+| CW + PGD         | 100.0%           | 98.0%           | 95.0%             |
+
+
 ### Adversarial Training Defense Mechanism for HNN Model with MNIST Dataset
 
 | **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy** | **Post Attack Defense Applied Accuracy** |
