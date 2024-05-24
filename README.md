@@ -82,7 +82,7 @@ Adversaries may attempt to attack machine learning models for various reasons, s
 
 By protecting the model against such advanced adversarial attacks, we can enhance its robustness and mitigate the risks associated with adversarial vulnerabilities.
 
-## Features
+## Python Code Features
 
 - Hybrid Neural Network (HNN) architecture combining QNN and CNN
 - Support for MNIST and EMNIST datasets
@@ -95,7 +95,7 @@ By protecting the model against such advanced adversarial attacks, we can enhanc
 - Evaluation of model performance and adversarial robustness
 - Visualization of misclassified examples and adversarial perturbations
 
-## Usage
+## Python Code Usage
 
 To use the code in this repository:
 
@@ -110,4 +110,4 @@ Please refer to the code documentation and comments for more details on the impl
 
 This code builds upon the concepts and techniques from various research papers and open-source libraries in the field of adversarial machine learning. We would like to acknowledge their contributions and the valuable insights they provide.
 
-Disclaimer This repository is intended for educational and research purposes.
+Disclaimer: This repository is intended for educational and research purposes.
