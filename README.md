@@ -51,7 +51,7 @@ By applying these randomization techniques, the model learns to be more robust a
 | CW + PGD         | 100.0%           | 98.0%           | 100.0%             |
 
 
-### Adversarial Training
+### Adversarial Training Defense
 
 Adversarial training is a defense technique that involves training the model on a combination of clean examples and adversarial examples generated using various attack methods. By exposing the model to adversarial examples during training, it learns to be more robust and resistant to adversarial perturbations.
 
