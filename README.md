@@ -11,6 +11,17 @@ Sicong Han, Chenhao Lin, Chao Shen, Qian Wang, and Xiaohong Guan. 2023. Interpre
 Olga Taran, Shideh Rezaeifar, Taras Holotyak, Slava Voloshynovskiy; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 11226-11233
 https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adversarial_Attacks_by_Randomized_Diversification_CVPR_2019_paper.html
 
+## Results
+
+### Adversarial Training Defense Mechanism for HNN Model with MNIST Dataset
+
+| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy** | **Post Attack Defense Applied Accuracy** |
+|------------------|------------------|------------------|--------------------|
+| FGSM + CW        | 98.0%           | 20.0%           | 100.0%             |
+| FGSM + PGD       | 98.0%           | 20.0%           | 98.0%             |
+| CW + PGD         | 100.0%           | 89.0%           | 100.0%             |
+
+
 ## Features
 
 - Hybrid Neural Network (HNN) architecture combining QNN and CNN
