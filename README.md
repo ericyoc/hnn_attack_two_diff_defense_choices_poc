@@ -11,9 +11,9 @@ Sicong Han, Chenhao Lin, Chao Shen, Qian Wang, and Xiaohong Guan. 2023. Interpre
 Olga Taran, Shideh Rezaeifar, Taras Holotyak, Slava Voloshynovskiy; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 11226-11233
 https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adversarial_Attacks_by_Randomized_Diversification_CVPR_2019_paper.html
 
-## Results
+## HNN Model with MNIST Dataset Results
 
-### Randomization Defense Mechanism Using Random Resizing Approach for HNN Model with MNIST Dataset
+### Randomization Defense Mechanism Using Random Resizing Approach 
 
 | **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy** | **Post Attack Defense Applied Accuracy** |
 |------------------|------------------|------------------|--------------------|
@@ -22,7 +22,7 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 | CW + PGD         | 100.0%           | 98.0%           | 95.0%             |
 
 
-### Adversarial Training Defense Mechanism for HNN Model with MNIST Dataset
+### Adversarial Training Defense Mechanism
 
 | **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy** | **Post Attack Defense Applied Accuracy** |
 |------------------|------------------|------------------|--------------------|
