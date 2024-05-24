@@ -13,6 +13,19 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 
 ## Results for HNN Model with MNIST Dataset 
 
+### Randomization Defense
+
+Randomization defense techniques involve applying random transformations to the input data during training to increase the model's robustness against adversarial attacks. The key idea behind randomization defense is to introduce random variations in the input data, making it harder for adversarial perturbations to have a consistent effect on the model's predictions.
+
+The implemented randomization defense methods work as follows:
+
+- Random Resizing: The input images are randomly resized within a specified scale range. This introduces variations in the spatial dimensions of the images, making the model more resilient to size-related adversarial perturbations.
+- Random Cropping: A random smaller region is cropped from the input images. This helps the model learn to focus on different parts of the image and reduces its sensitivity to specific pixel locations.
+- Random Rotation: The input images are randomly rotated within a specified angle range. This helps the model become invariant to rotational changes and enhances its ability to recognize objects from different orientations.
+- Combined Randomization: Multiple randomization techniques, including resizing, cropping, rotation, color jittering, random erasing, and noise injection, are applied together. This creates a diverse set of input variations, making it challenging for adversarial perturbations to have a consistent impact.
+
+By applying these randomization techniques, the model learns to be more robust and generalizable, as it is trained on a wide range of input variations. Adversarial perturbations that are crafted based on a specific input may not have the same effect when random transformations are applied, reducing the effectiveness of adversarial attacks.
+
 ### Randomization Defense Mechanism Using Random Resizing Approach 
 
 | **Compounded Attack** | **Pre-Attack Accuracy - No Defense** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
@@ -37,18 +50,10 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 | FGSM + PGD       | 100.0%           | 23.0%           | 100.0%             |
 | CW + PGD         | 100.0%           | 98.0%           | 100.0%             |
 
-### Randomization Defense Mechanism
 
-Randomization defense techniques involve applying random transformations to the input data during training to increase the model's robustness against adversarial attacks. The key idea behind randomization defense is to introduce random variations in the input data, making it harder for adversarial perturbations to have a consistent effect on the model's predictions.
+### Adversarial Training
 
-The implemented randomization defense methods work as follows:
-
-- Random Resizing: The input images are randomly resized within a specified scale range. This introduces variations in the spatial dimensions of the images, making the model more resilient to size-related adversarial perturbations.
-- Random Cropping: A random smaller region is cropped from the input images. This helps the model learn to focus on different parts of the image and reduces its sensitivity to specific pixel locations.
-- Random Rotation: The input images are randomly rotated within a specified angle range. This helps the model become invariant to rotational changes and enhances its ability to recognize objects from different orientations.
-- Combined Randomization: Multiple randomization techniques, including resizing, cropping, rotation, color jittering, random erasing, and noise injection, are applied together. This creates a diverse set of input variations, making it challenging for adversarial perturbations to have a consistent impact.
-
-By applying these randomization techniques, the model learns to be more robust and generalizable, as it is trained on a wide range of input variations. Adversarial perturbations that are crafted based on a specific input may not have the same effect when random transformations are applied, reducing the effectiveness of adversarial attacks.
+Adversarial training is a defense technique that involves training the model on a combination of clean examples and adversarial examples generated using various attack methods. By exposing the model to adversarial examples during training, it learns to be more robust and resistant to adversarial perturbations.
 
 ### Adversarial Training Defense Mechanism
 
@@ -58,9 +63,6 @@ By applying these randomization techniques, the model learns to be more robust a
 | FGSM + PGD       | 98.0%           | 20.0%           | 98.0%             |
 | CW + PGD         | 100.0%           | 89.0%           | 100.0%             |
 
-### Adversarial Training
-
-Adversarial training is a defense technique that involves training the model on a combination of clean examples and adversarial examples generated using various attack methods. By exposing the model to adversarial examples during training, it learns to be more robust and resistant to adversarial perturbations.
 
 ## Importance of Model Protection
 
