@@ -31,24 +31,7 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 | CW + PGD         | 100.0%           | 89.0%           | 100.0%             |
 
 
-## Features
-
-- Hybrid Neural Network (HNN) architecture combining QNN and CNN
-- Support for MNIST and EMNIST datasets
-- Adversarial defense using either adversarial training or randomization techniques
-- Multiple randomization defense methods:
-  - Random resizing
-  - Random cropping
-  - Random rotation
-  - Combined randomization (resizing, cropping, rotation, color jittering, random erasing, noise injection)
-- Evaluation of model performance and adversarial robustness
-- Visualization of misclassified examples and adversarial perturbations
-
 ## Adversarial Defense Techniques
-
-### Adversarial Training
-
-Adversarial training is a defense technique that involves training the model on a combination of clean examples and adversarial examples generated using various attack methods. By exposing the model to adversarial examples during training, it learns to be more robust and resistant to adversarial perturbations.
 
 ### Randomization Defense
 
@@ -62,6 +45,10 @@ The implemented randomization defense methods work as follows:
 - Combined Randomization: Multiple randomization techniques, including resizing, cropping, rotation, color jittering, random erasing, and noise injection, are applied together. This creates a diverse set of input variations, making it challenging for adversarial perturbations to have a consistent impact.
 
 By applying these randomization techniques, the model learns to be more robust and generalizable, as it is trained on a wide range of input variations. Adversarial perturbations that are crafted based on a specific input may not have the same effect when random transformations are applied, reducing the effectiveness of adversarial attacks.
+
+### Adversarial Training
+
+Adversarial training is a defense technique that involves training the model on a combination of clean examples and adversarial examples generated using various attack methods. By exposing the model to adversarial examples during training, it learns to be more robust and resistant to adversarial perturbations.
 
 ## Importance of Model Protection
 
@@ -80,6 +67,19 @@ Adversaries may attempt to attack machine learning models for various reasons, s
 - Exploiting Vulnerabilities: Adversaries may attempt to identify and exploit vulnerabilities in the model to compromise its security or privacy.
 
 By protecting the model against such advanced adversarial attacks, we can enhance its robustness and mitigate the risks associated with adversarial vulnerabilities.
+
+## Features
+
+- Hybrid Neural Network (HNN) architecture combining QNN and CNN
+- Support for MNIST and EMNIST datasets
+- Adversarial defense using either adversarial training or randomization techniques
+- Multiple randomization defense methods:
+  - Random resizing
+  - Random cropping
+  - Random rotation
+  - Combined randomization (resizing, cropping, rotation, color jittering, random erasing, noise injection)
+- Evaluation of model performance and adversarial robustness
+- Visualization of misclassified examples and adversarial perturbations
 
 ## Usage
 
