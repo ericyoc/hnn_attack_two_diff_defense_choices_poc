@@ -15,7 +15,7 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 
 ### Randomization Defense Mechanism Using Random Resizing Approach 
 
-| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy** | **Post Attack Defense Applied Accuracy** |
+| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
 |------------------|------------------|------------------|--------------------|
 | FGSM + CW        | 98.0%           | 6.0%           | 100.0%             |
 | FGSM + PGD       | 100.0%           | 14.0%           | 100.0%             |
@@ -23,7 +23,7 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 
 ### Randomization Defense Mechanism Using Random Cropping Approach 
 
-| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy** | **Post Attack Defense Applied Accuracy** |
+| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
 |------------------|------------------|------------------|--------------------|
 | FGSM + CW        | 100.0%           | 14.0%           | 100.0%             |
 | FGSM + PGD       | 100.0%           | 27.0%           | 97.0%             |
@@ -32,7 +32,7 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 
 ### Adversarial Training Defense Mechanism
 
-| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy** | **Post Attack Defense Applied Accuracy** |
+| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
 |------------------|------------------|------------------|--------------------|
 | FGSM + CW        | 98.0%           | 20.0%           | 100.0%             |
 | FGSM + PGD       | 98.0%           | 20.0%           | 98.0%             |
