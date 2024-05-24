@@ -15,7 +15,7 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 
 ### Randomization Defense Mechanism Using Random Resizing Approach 
 
-| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
+| **Compounded Attack** | **Pre-Attack Accuracy - No Defense** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
 |------------------|------------------|------------------|--------------------|
 | FGSM + CW        | 98.0%           | 6.0%           | 100.0%             |
 | FGSM + PGD       | 100.0%           | 14.0%           | 100.0%             |
@@ -23,16 +23,23 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 
 ### Randomization Defense Mechanism Using Random Cropping Approach 
 
-| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
+| **Compounded Attack** | **Pre-Attack Accuracy - No Defense** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
 |------------------|------------------|------------------|--------------------|
 | FGSM + CW        | 100.0%           | 14.0%           | 100.0%             |
 | FGSM + PGD       | 100.0%           | 27.0%           | 97.0%             |
 | CW + PGD         | 100.0%           | 98.0%           | 100.0%             |
 
+### Randomization Defense Mechanism Using Random Rotation Approach 
+
+| **Compounded Attack** | **Pre-Attack Accuracy - No Defense** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
+|------------------|------------------|------------------|--------------------|
+| FGSM + CW        | 100.0%           | 11.0%           | 100.0%             |
+| FGSM + PGD       | 100.0%           | 23.0%           | 100.0%             |
+| CW + PGD         | 100.0%           | 98.0%           | 100.0%             |
 
 ### Adversarial Training Defense Mechanism
 
-| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
+| **Compounded Attack** | **Pre-Attack Accuracy - No Defense** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
 |------------------|------------------|------------------|--------------------|
 | FGSM + CW        | 98.0%           | 20.0%           | 100.0%             |
 | FGSM + PGD       | 98.0%           | 20.0%           | 98.0%             |
