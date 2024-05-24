@@ -34,6 +34,7 @@ By applying these randomization techniques, the model learns to be more robust a
 | FGSM + PGD       | 100.0%           | 14.0%           | 100.0%             |
 | CW + PGD         | 100.0%           | 98.0%           | 95.0%             |
 
+
 ### Randomization Defense Mechanism Using Random Cropping Approach 
 
 | **Compounded Attack** | **Pre-Attack Accuracy - No Defense** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
@@ -41,6 +42,7 @@ By applying these randomization techniques, the model learns to be more robust a
 | FGSM + CW        | 100.0%           | 14.0%           | 100.0%             |
 | FGSM + PGD       | 100.0%           | 27.0%           | 97.0%             |
 | CW + PGD         | 100.0%           | 98.0%           | 100.0%             |
+
 
 ### Randomization Defense Mechanism Using Random Rotation Approach 
 
@@ -51,9 +53,19 @@ By applying these randomization techniques, the model learns to be more robust a
 | CW + PGD         | 100.0%           | 98.0%           | 100.0%             |
 
 
+### Randomization Defense Mechanism Using Combined Randomization Approach 
+
+| **Compounded Attack** | **Pre-Attack Accuracy - No Defense** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
+|------------------|------------------|------------------|--------------------|
+| FGSM + CW        | 100.0%           | 16.0%           | 100.0%             |
+| FGSM + PGD       | 100.0%           | 6.0%           | 100.0%             |
+| CW + PGD         | 100.0%           | 97.0%           | 100.0%             |
+
+
 ### Adversarial Training Defense
 
 Adversarial training is a defense technique that involves training the model on a combination of clean examples and adversarial examples generated using various attack methods. By exposing the model to adversarial examples during training, it learns to be more robust and resistant to adversarial perturbations.
+
 
 ### Adversarial Training Defense Mechanism
 
