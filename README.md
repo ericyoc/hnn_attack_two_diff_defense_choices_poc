@@ -37,7 +37,7 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 | FGSM + PGD       | 100.0%           | 23.0%           | 100.0%             |
 | CW + PGD         | 100.0%           | 98.0%           | 100.0%             |
 
-### Randomization Defense
+### Randomization Defense Mechanism
 
 Randomization defense techniques involve applying random transformations to the input data during training to increase the model's robustness against adversarial attacks. The key idea behind randomization defense is to introduce random variations in the input data, making it harder for adversarial perturbations to have a consistent effect on the model's predictions.
 
