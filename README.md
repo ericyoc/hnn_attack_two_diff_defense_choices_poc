@@ -21,6 +21,14 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 | FGSM + PGD       | 100.0%           | 14.0%           | 100.0%             |
 | CW + PGD         | 100.0%           | 98.0%           | 95.0%             |
 
+### Randomization Defense Mechanism Using Random Cropping Approach 
+
+| **Compounded Attack** | **Pre-Attack Accuracy** | **Post Attack Accuracy** | **Post Attack Defense Applied Accuracy** |
+|------------------|------------------|------------------|--------------------|
+| FGSM + CW        | 100.0%           | 14.0%           | 100.0%             |
+| FGSM + PGD       | 100.0%           | 27.0%           | 97.0%             |
+| CW + PGD         | 100.0%           | 98.0%           | 100.0%             |
+
 
 ### Adversarial Training Defense Mechanism
 
