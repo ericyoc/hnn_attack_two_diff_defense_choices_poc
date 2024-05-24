@@ -37,14 +37,6 @@ https://openaccess.thecvf.com/content_CVPR_2019/html/Taran_Defending_Against_Adv
 | FGSM + PGD       | 100.0%           | 23.0%           | 100.0%             |
 | CW + PGD         | 100.0%           | 98.0%           | 100.0%             |
 
-### Adversarial Training Defense Mechanism
-
-| **Compounded Attack** | **Pre-Attack Accuracy - No Defense** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
-|------------------|------------------|------------------|--------------------|
-| FGSM + CW        | 98.0%           | 20.0%           | 100.0%             |
-| FGSM + PGD       | 98.0%           | 20.0%           | 98.0%             |
-| CW + PGD         | 100.0%           | 89.0%           | 100.0%             |
-
 
 ## Adversarial Defense Techniques
 
@@ -60,6 +52,14 @@ The implemented randomization defense methods work as follows:
 - Combined Randomization: Multiple randomization techniques, including resizing, cropping, rotation, color jittering, random erasing, and noise injection, are applied together. This creates a diverse set of input variations, making it challenging for adversarial perturbations to have a consistent impact.
 
 By applying these randomization techniques, the model learns to be more robust and generalizable, as it is trained on a wide range of input variations. Adversarial perturbations that are crafted based on a specific input may not have the same effect when random transformations are applied, reducing the effectiveness of adversarial attacks.
+
+### Adversarial Training Defense Mechanism
+
+| **Compounded Attack** | **Pre-Attack Accuracy - No Defense** | **Post Attack Accuracy - No Defense** | **Post Attack Accuracy - with Defense** |
+|------------------|------------------|------------------|--------------------|
+| FGSM + CW        | 98.0%           | 20.0%           | 100.0%             |
+| FGSM + PGD       | 98.0%           | 20.0%           | 98.0%             |
+| CW + PGD         | 100.0%           | 89.0%           | 100.0%             |
 
 ### Adversarial Training
 
